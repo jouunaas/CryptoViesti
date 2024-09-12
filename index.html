@@ -35,10 +35,11 @@
             border-radius: 5px;
             padding: 15px;
             font-family: 'Courier New', Courier, monospace;
-            font-size: 1.2em; /* Suuremmin fonttikoko */
+            font-size: 1em; /* Suuremmin fonttikoko */
             color: #00ff00;
-            white-space: pre-wrap; /* Säilyttää rivinvaihdot */
-            word-wrap: break-word; /* Rivittää sanat tarvittaessa */
+            white-space: nowrap; /* Teksti pysyy yhdellä rivillä */
+            overflow: hidden; /* Piilottaa yli menevän tekstin */
+            text-overflow: ellipsis; /* Lisää ellipsin pitkille riveille */
             margin-top: 20px;
         }
         .highlight {
@@ -72,8 +73,7 @@
         <p>Tiedustelutiimimme on saanut haltuunsa salaviestin.</p>
 
         <div class="code">
-            4 17 7 Ä - 19 Ä 21 18 - 22 4 12 - 23 21 4 24 16 4 23 - 12 15 13 4 17 - <br>
-            '19 12 7 4 - 14 4 12 14 14 12 - Ä 15 15 4' - 11 8 12 23 18 22 23 4
+            4 17 7 Ä - 19 Ä 21 18 - 22 4 12 - 23 21 4 24 16 4 23 - 12 15 13 4 17 - '19 12 7 4 - 14 4 12 14 14 12 - Ä 15 15 4' - 11 8 12 23 18 22 23 4
         </div>
 
         <h2>Toimintaohjeet</h2>
@@ -85,13 +85,11 @@
         </div>
 
         <div class="code">
-            14 21 13 5 18 15 20 - 11 Ä Ä 14 14 5 20 Ä Ä 5 - <br>
-            14 19 9 14 11 9 18 10 1 9 13 9 11 19 9
+            14 21 13 5 18 15 20 - 11 Ä Ä 14 14 5 20 Ä Ä 5 - 14 19 9 14 11 9 18 10 1 9 13 9 11 19 9
         </div>
 
         <div class="code">
-            äriirS maiairjki meskilto peentäine <br>
-            ksisetasikatar tinesvi!
+            äriirS maiairjki meskilto peentäine ksisetasikatar tinesvi!
         </div>
 
         <div class="footer">
